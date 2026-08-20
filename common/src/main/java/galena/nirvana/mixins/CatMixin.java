@@ -5,7 +5,7 @@ import galena.nirvana.NirvanaConstants;
 import java.util.Locale;
 import net.minecraft.ChatFormatting;
 import net.minecraft.resources.Identifier;
-import net.minecraft.world.entity.animal.Cat;
+import net.minecraft.world.entity.animal.feline.Cat;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Unique;
 import org.spongepowered.asm.mixin.injection.At;
