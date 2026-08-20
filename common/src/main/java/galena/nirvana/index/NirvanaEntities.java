@@ -9,7 +9,7 @@ import galena.nirvana.world.entity.Reefer;
 import net.minecraft.world.entity.Mob;
 import net.minecraft.world.entity.MobCategory;
 import net.minecraft.world.entity.item.PrimedTnt;
-import net.minecraft.world.entity.vehicle.MinecartTNT;
+import net.minecraft.world.entity.vehicle.minecart.MinecartTNT;
 
 public class NirvanaEntities {
 
