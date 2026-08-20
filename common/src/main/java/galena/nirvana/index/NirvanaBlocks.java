@@ -1,7 +1,7 @@
 package galena.nirvana.index;
 
-import com.tterrag.registrate.AbstractRegistrate;
-import com.tterrag.registrate.providers.ProviderType;
+import com.tterrag.registrate.Registrate;
+import com.tterag.registrate.providers.ProviderType;
 import com.tterrag.registrate.providers.RegistrateLangProvider;
 import com.tterrag.registrate.util.entry.BlockEntityEntry;
 import com.tterrag.registrate.util.entry.BlockEntry;
@@ -38,7 +38,7 @@ import org.jetbrains.annotations.Nullable;
 
 public class NirvanaBlocks {
 
-    private static final AbstractRegistrate REGISTRATE = Services.PLATFORM.getRegistrate();
+    private static final Registrate REGISTRATE = Services.PLATFORM.getRegistrate();
 
     public static final BlockEntry<HempCropBlock> HEMP = REGISTRATE
         .block("hemp", HempCropBlock::new)
