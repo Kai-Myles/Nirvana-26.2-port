@@ -17,4 +17,4 @@ jobs:
           distribution: temurin
           java-version: '25'
       - name: Compile common
-        run: ./gradlew :common:compileJava --console=plain
+        run: ./gradlew :common:compileJava --console=plain --stacktrace
