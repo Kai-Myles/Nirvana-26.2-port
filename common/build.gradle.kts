@@ -7,10 +7,7 @@ plugins {
 }
 
 dependencies {
-    // NeoForge 26.2 is no longer pulled transitively by NeoForm/Registrate.
-    // The common sources still use a small amount of NeoForge API (notably
-    // Registrate's data providers and registry holders), so expose it only
-    // at compile time. The Fabric jar does not package this dependency.
+    // NeoForge 26.2 is needed only for the NeoForge-specific/common bridge APIs.
     compileOnly("net.neoforged:neoforge:$neoforge_version")
 
     modCompileOnly(libs.jei.common.api)
@@ -22,7 +19,6 @@ sourceSets {
         java {
             exclude("galena/nirvana/config/ForgeClientConfig.java")
             exclude("galena/nirvana/config/ForgeCommonConfig.java")
-            exclude("galena/nirvana/world/item/ArmorLike.java")
         }
     }
 }
