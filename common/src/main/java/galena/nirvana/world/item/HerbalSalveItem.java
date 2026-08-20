@@ -10,11 +10,11 @@ import net.minecraft.world.InteractionResult;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.SuspiciousStewItem;
 import net.minecraft.world.item.ItemUseAnimation;
 
-public class HerbalSalveItem extends SuspiciousStewItem {
+public class HerbalSalveItem extends Item {
 
     public HerbalSalveItem(Properties properties) {
         super(properties);
@@ -34,7 +34,6 @@ public class HerbalSalveItem extends SuspiciousStewItem {
         effects.forEach(target::addEffect);
 
         player.playSound(NirvanaSounds.HERBAL_SALVE.get());
-
         player.getCooldowns().addCooldown(stack.getItem(), 40);
 
         if (player.level() instanceof ServerLevel level) {
@@ -46,7 +45,7 @@ public class HerbalSalveItem extends SuspiciousStewItem {
             );
         }
 
-        if (!(player.getAbilities().instabuild)) {
+        if (!player.getAbilities().instabuild) {
             if (stack.getCount() > 1) {
                 stack.shrink(1);
             } else {
@@ -61,7 +60,6 @@ public class HerbalSalveItem extends SuspiciousStewItem {
 
     @Override
     public ItemUseAnimation getUseAnimation(ItemStack stack) {
-        if (!getEffects(stack).isEmpty()) return ItemUseAnimation.BLOCK;
-        return super.getUseAnimation(stack);
+        return getEffects(stack).isEmpty() ? ItemUseAnimation.NONE : ItemUseAnimation.BLOCK;
     }
 }
