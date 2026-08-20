@@ -1,7 +1,7 @@
 package galena.nirvana.index;
 
 import com.mojang.datafixers.util.Pair;
-import com.tterrag.registrate.AbstractRegistrate;
+import com.tterrag.registrate.Registrate;
 import com.tterrag.registrate.providers.DataGenContext;
 import com.tterrag.registrate.providers.ProviderType;
 import com.tterrag.registrate.providers.generators.RegistrateRecipeProvider;
@@ -39,7 +39,7 @@ import net.minecraft.world.item.alchemy.Potions;
 
 public class NirvanaItems {
 
-    private static final AbstractRegistrate REGISTRATE = Services.PLATFORM.getRegistrate();
+    private static final Registrate REGISTRATE = Services.PLATFORM.getRegistrate();
 
     public static final ItemEntry<Item> HEMP = REGISTRATE
         .item("hemp", Item::new)
@@ -98,7 +98,7 @@ public class NirvanaItems {
         .register();
 
     private static <T extends Item> NonNullBiConsumer<DataGenContext<Item, T>, CreativeModeTabModifier> addPotionStacks() {
-        return (context, modifier) -> BuiltInRegistries.POTION.holders()
+        return (context, modifier) -> BuiltInRegistries.POTION.listElements()
             .filter(it -> !it.is(Potions.WATER))
             .map(it -> {
                 var stack = new ItemStack(context.get());
