@@ -22,6 +22,7 @@ sourceSets {
         java {
             exclude("galena/nirvana/config/ForgeClientConfig.java")
             exclude("galena/nirvana/config/ForgeCommonConfig.java")
+            exclude("galena/nirvana/world/item/ArmorLike.java")
         }
     }
 }
