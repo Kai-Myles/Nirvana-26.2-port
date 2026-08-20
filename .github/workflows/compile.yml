@@ -3,6 +3,8 @@ name: Compile
 on:
   push:
     branches: ["fix/26.2-compile"]
+  pull_request:
+    branches: ["main"]
   workflow_dispatch:
 
 jobs:
