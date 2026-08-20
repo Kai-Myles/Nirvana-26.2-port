@@ -1,0 +1,14 @@
+[versions]
+jei = "30.15.0.102"
+config-api-port = "26.2.1"
+
+[libraries]
+
+registrate = { module = "com.tterrag.registrate:Registrate", version = "MC26.2-1.6.0" }
+
+jei-common-api = { group = "mezz.jei", name = "jei-26.2-common-api", version.ref = "jei" }
+jei-fabric-api = { group = "mezz.jei", name = "jei-26.2-fabric-api", version.ref = "jei" }
+jei-fabric = { group = "mezz.jei", name = "jei-26.2-fabric", version.ref = "jei" }
+jei-lib = { group = "mezz.jei", name = "jei-26.2-lib", version.ref = "jei" }
+
+config-api-port-fabric = { module = "fuzs.forgeconfigapiport:forgeconfigapiport-fabric", version.ref = "config-api-port" }

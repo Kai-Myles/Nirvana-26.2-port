@@ -1,0 +1,26 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "galena.nirvana.mixins",
+  "compatibilityLevel": "JAVA_17",
+  "mixins": [
+    "CampfireBlockEntityMixin",
+    "CatMixin",
+    "CreeperMixin",
+    "EntityMixin",
+    "LivingEntityMixin",
+    "MobMixin"
+  ],
+  "client": [
+    "GameRendererAccessor",
+    "GameRendererMixin",
+    "ItemInHandRendererMixin",
+    "ParticleMixin",
+    "SkullBlockRendererMixin",
+    "PlayerItemInHandLayerMixin",
+    "PlayerItemInHandLayerAccessor"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

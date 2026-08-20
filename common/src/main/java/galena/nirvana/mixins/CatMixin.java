@@ -1,0 +1,37 @@
+package galena.nirvana.mixins;
+
+import com.llamalad7.mixinextras.injector.ModifyReturnValue;
+import galena.nirvana.NirvanaConstants;
+import java.util.Locale;
+import net.minecraft.ChatFormatting;
+import net.minecraft.resources.Identifier;
+import net.minecraft.world.entity.animal.Cat;
+import org.spongepowered.asm.mixin.Mixin;
+import org.spongepowered.asm.mixin.Unique;
+import org.spongepowered.asm.mixin.injection.At;
+
+@Mixin(Cat.class)
+public class CatMixin {
+
+    @Unique
+    private static final Identifier SPRIGATITO_TEXTURE = NirvanaConstants.createId("textures/entity/cat/sprigatito.png");
+
+    @Unique
+    private boolean nirvana$isSprigatito() {
+        var self = (Cat) (Object) (this);
+        var customName = self.getCustomName();
+        if (customName == null) return false;
+        var name = ChatFormatting.stripFormatting(customName.getString()).toLowerCase(Locale.ROOT);
+        return name.equals("sprigatito");
+    }
+
+    @ModifyReturnValue(
+            method = "getTextureId()Lnet/minecraft/resources/Identifier;",
+            at = @At("RETURN")
+    )
+    private Identifier overwriteTexture(Identifier original) {
+        if (nirvana$isSprigatito()) return SPRIGATITO_TEXTURE;
+        return original;
+    }
+
+}

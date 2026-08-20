@@ -1,0 +1,16 @@
+{
+  "type": "nirvana:replace_item",
+  "conditions": [
+    {
+      "condition": "neoforge:loot_table_id",
+      "loot_table_id": "minecraft:gameplay/sniffer_digging"
+    },
+    {
+      "chance": 0.333,
+      "condition": "minecraft:random_chance"
+    }
+  ],
+  "items": [
+    "nirvana:bliss_bloom"
+  ]
+}

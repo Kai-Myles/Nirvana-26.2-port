@@ -1,0 +1,107 @@
+Initialized native services in: C:\Users\myles\.gradle\native
+Initialized jansi services in: C:\Users\myles\.gradle\native
+The current JVM process isn't compatible with build requirement. The maximum heap size is insufficient.
+
+To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/9.5.1/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+Starting process 'Gradle build daemon'. Working directory: C:\Users\myles\.gradle\daemon\9.5.1 Command: C:\Program Files\Eclipse Adoptium\jdk-25.0.4.7-hotspot\bin\java.exe --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.lang.invoke=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.prefs/java.util.prefs=ALL-UNNAMED --add-exports=jdk.compiler/com.sun.tools.javac.api=ALL-UNNAMED --add-exports=jdk.compiler/com.sun.tools.javac.util=ALL-UNNAMED --add-opens=java.base/java.nio.charset=ALL-UNNAMED --add-opens=java.base/java.net=ALL-UNNAMED --add-opens=java.base/java.util.concurrent=ALL-UNNAMED --add-opens=java.base/java.util.concurrent.atomic=ALL-UNNAMED --add-opens=java.xml/javax.xml.namespace=ALL-UNNAMED --add-opens=java.base/java.time=ALL-UNNAMED --enable-native-access=ALL-UNNAMED -Xmx3G -Dfile.encoding=UTF-8 -Duser.country=US -Duser.language=en -Duser.variant -cp C:\Users\myles\.gradle\wrapper\dists\gradle-9.5.1-bin\iq79hdu3mqx29lgffhp8bfmx\gradle-9.5.1\lib\gradle-daemon-main-9.5.1.jar -javaagent:C:\Users\myles\.gradle\wrapper\dists\gradle-9.5.1-bin\iq79hdu3mqx29lgffhp8bfmx\gradle-9.5.1\lib\agents\gradle-instrumentation-agent-9.5.1.jar org.gradle.launcher.daemon.bootstrap.GradleDaemon 9.5.1
+Successfully started process 'Gradle build daemon'
+An attempt to start the daemon took 0.659 secs.
+The client will now receive all logging from the daemon (pid: 9680). The daemon log file: C:\Users\myles\.gradle\daemon\9.5.1\daemon-9680.out.log
+Daemon will be stopped at the end of the build 
+Using 16 worker leases.
+Operational build model parameters: {cachingModelBuilding=false, configurationCache=false, configurationCacheDisabledReason=null, configurationCacheParallelLoad=false, configurationCacheParallelStore=false, configureOnDemand=false, invalidateCoupledProjects=false, isolatedProjects=false, modelAsProjectDependency=false, modelBuilding=false, parallelModelBuilding=false, parallelProjectConfiguration=false, parallelProjectExecution=false, resilientModelBuilding=false}
+Received JVM installation metadata from 'C:\Program Files\Eclipse Adoptium\jdk-25.0.4.7-hotspot': {JAVA_HOME=C:\Program Files\Eclipse Adoptium\jdk-25.0.4.7-hotspot, JAVA_VERSION=25.0.4, JAVA_VENDOR=Eclipse Adoptium, RUNTIME_NAME=OpenJDK Runtime Environment, RUNTIME_VERSION=25.0.4+7-LTS, VM_NAME=OpenJDK 64-Bit Server VM, VM_VERSION=25.0.4+7-LTS, VM_VENDOR=Eclipse Adoptium, OS_ARCH=amd64}
+Watching the file system is configured to be enabled if available
+Now considering [C:\Users\myles\Downloads\Nirvana-26.2-fabric-port\Nirvana] as hierarchies to watch
+File system watching is active
+Starting Build
+Resolved plugin [id: 'com.possible-triangle.helper', version: '1.4']
+Resolved plugin [id: 'com.possible-triangle.packwiz', version: '1.4.+']
+Variant Selection Exception: org.gradle.internal.component.resolution.failure.exception.VariantSelectionByAttributesException caused by Resolution Failure: org.gradle.internal.component.resolution.failure.type.NoVariantsWithMatchingCapabilitiesFailure
+Variant Selection Exception: org.gradle.internal.component.resolution.failure.exception.VariantSelectionByAttributesException caused by Resolution Failure: org.gradle.internal.component.resolution.failure.type.NoVariantsWithMatchingCapabilitiesFailure
+using gradle helper version 1.4
+Settings evaluated using settings file 'C:\Users\myles\Downloads\Nirvana-26.2-fabric-port\Nirvana\settings.gradle.kts'.
+Projects loaded. Root project using build file 'C:\Users\myles\Downloads\Nirvana-26.2-fabric-port\Nirvana\build.gradle.kts'.
+Included projects: [root project 'Nirvana', project ':common', project ':fabric']
+
+> Configure project :
+Evaluating root project 'Nirvana' using build file 'C:\Users\myles\Downloads\Nirvana-26.2-fabric-port\Nirvana\build.gradle.kts'.
+resolving 1.4.234 for core
+Resolved plugin [id: 'com.possible-triangle.core', version: '1.4.234']
+resolving 1.4.234 for common
+Resolved plugin [id: 'com.possible-triangle.common', version: '1.4.234', apply: false]
+resolving 1.4.234 for neoforge
+Resolved plugin [id: 'com.possible-triangle.neoforge', version: '1.4.234', apply: false]
+resolving 1.4.234 for fabric
+Resolved plugin [id: 'com.possible-triangle.fabric', version: '1.4.234', apply: false]
+applying gradle helper 1.4.234 in Nirvana
+applying gradle helper 1.4.234 in common
+applying gradle helper 1.4.234 in fabric
+
+> Configure project :common
+Evaluating project ':common' using build file 'C:\Users\myles\Downloads\Nirvana-26.2-fabric-port\Nirvana\common\build.gradle.kts'.
+resolving 1.4.234 for common
+Resolved plugin [id: 'com.possible-triangle.common', version: '1.4.234']
+Using NeoForm version 26.2-2
+Parsed unknown MC version 26.2 from NeoForm version 26.2-2. Using capabilities of latest known Minecraft version 26.1-snapshot-2 with an updated Minecraft version.
+Starting process 'command 'C:\Program Files\Java\jdk-25.0.3\bin\java.exe''. Working directory: C:\Users\myles\.gradle\.tmp\tmp-jvm9666911189388977326probe Command: C:\Program Files\Java\jdk-25.0.3\bin\java.exe -Xmx32m -Xms32m -cp . JavaProbe
+Successfully started process 'command 'C:\Program Files\Java\jdk-25.0.3\bin\java.exe''
+Received JVM installation metadata from 'C:\Program Files\Java\jdk-25.0.3': {JAVA_HOME=C:\Program Files\Java\jdk-25.0.3, JAVA_VERSION=25.0.3, JAVA_VENDOR=Oracle Corporation, RUNTIME_NAME=Java(TM) SE Runtime Environment, RUNTIME_VERSION=25.0.3+9-LTS-195, VM_NAME=Java HotSpot(TM) 64-Bit Server VM, VM_VERSION=25.0.3+9-LTS-195, VM_VENDOR=Oracle Corporation, OS_ARCH=amd64}
+Starting process 'command 'C:\Program Files\Java\jdk-17\bin\java.exe''. Working directory: C:\Users\myles\.gradle\.tmp\tmp-jvm4289192618896601557probe Command: C:\Program Files\Java\jdk-17\bin\java.exe -Xmx32m -Xms32m -cp . JavaProbe
+Successfully started process 'command 'C:\Program Files\Java\jdk-17\bin\java.exe''
+Received JVM installation metadata from 'C:\Program Files\Java\jdk-17': {JAVA_HOME=C:\Program Files\Java\jdk-17, JAVA_VERSION=17.0.12, JAVA_VENDOR=Oracle Corporation, RUNTIME_NAME=Java(TM) SE Runtime Environment, RUNTIME_VERSION=17.0.12+8-LTS-286, VM_NAME=Java HotSpot(TM) 64-Bit Server VM, VM_VERSION=17.0.12+8-LTS-286, VM_VENDOR=Oracle Corporation, OS_ARCH=amd64}
+Starting process 'command 'C:\Program Files\Eclipse Adoptium\jdk-21.0.12.8-hotspot\bin\java.exe''. Working directory: C:\Users\myles\.gradle\.tmp\tmp-jvm8300364315202930356probe Command: C:\Program Files\Eclipse Adoptium\jdk-21.0.12.8-hotspot\bin\java.exe -Xmx32m -Xms32m -cp . JavaProbe
+Successfully started process 'command 'C:\Program Files\Eclipse Adoptium\jdk-21.0.12.8-hotspot\bin\java.exe''
+Received JVM installation metadata from 'C:\Program Files\Eclipse Adoptium\jdk-21.0.12.8-hotspot': {JAVA_HOME=C:\Program Files\Eclipse Adoptium\jdk-21.0.12.8-hotspot, JAVA_VERSION=21.0.12, JAVA_VENDOR=Eclipse Adoptium, RUNTIME_NAME=OpenJDK Runtime Environment, RUNTIME_VERSION=21.0.12+8-LTS, VM_NAME=OpenJDK 64-Bit Server VM, VM_VERSION=21.0.12+8-LTS, VM_VENDOR=Eclipse Adoptium, OS_ARCH=amd64}
+Found installer in mod fabricloader version 0.19.3
+
+> Configure project :fabric
+Evaluating project ':fabric' using build file 'C:\Users\myles\Downloads\Nirvana-26.2-fabric-port\Nirvana\fabric\build.gradle.kts'.
+resolving 1.4.234 for fabric
+Resolved plugin [id: 'com.possible-triangle.fabric', version: '1.4.234']
+Fabric Loom: 1.17.19
+(kotlin.metadata.jvm.KotlinClassMetadata) with version (2.3.20-release-208) was loaded from (/C:/Users/myles/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-metadata-jvm/2.3.20/4b6dc7915d060ec8c619f4be820e85fa69d738d1/kotlin-metadata-jvm-2.3.20.jar)
+(org.objectweb.asm.ClassVisitor) with version (9.10.1) was loaded from (/C:/Users/myles/.gradle/caches/modules-2/files-2.1/org.ow2.asm/asm/9.10.1/ada2141c0cc52ee8f5c48cd5fa4ce0e794f22236/asm-9.10.1.jar)
+(org.objectweb.asm.tree.analysis.Analyzer) with version (9.10.1) was loaded from (/C:/Users/myles/.gradle/caches/modules-2/files-2.1/org.ow2.asm/asm-analysis/9.10.1/8d49f14d51f632cb1d87c88d1ceaf50db0d8af1b/asm-analysis-9.10.1.jar)
+(org.objectweb.asm.commons.ClassRemapper) with version (9.10.1) was loaded from (/C:/Users/myles/.gradle/caches/modules-2/files-2.1/org.ow2.asm/asm-commons/9.10.1/4229e4c55fd8e01c23f9fe9884075cc628aacc50/asm-commons-9.10.1.jar)
+(org.objectweb.asm.tree.ClassNode) with version (9.10.1) was loaded from (/C:/Users/myles/.gradle/caches/modules-2/files-2.1/org.ow2.asm/asm-tree/9.10.1/e244332a17564c1d1572449399a842de35881be2/asm-tree-9.10.1.jar)
+(org.objectweb.asm.util.ASMifier) with version (9.10.1) was loaded from (/C:/Users/myles/.gradle/caches/modules-2/files-2.1/org.ow2.asm/asm-util/9.10.1/7bb9d450e8d4cbf9f9e04096c44bbfe7fba80b15/asm-util-9.10.1.jar)
+(com.google.gson.Gson) with version (null) was loaded from (/C:/Users/myles/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.11.0/527175ca6d81050b53bdd4c457a6d6e017626b0e/gson-2.11.0.jar)
+Using cached Minecraft jars
+:Extracting server jar from bootstrap
+Starting process 'command 'C:\Users\myles\.jdks\jbr-17.0.14\bin\java.exe''. Working directory: C:\Users\myles\.gradle\.tmp\tmp-jvm9292110127947036033probe Command: C:\Users\myles\.jdks\jbr-17.0.14\bin\java.exe -Xmx32m -Xms32m -cp . JavaProbe
+Successfully started process 'command 'C:\Users\myles\.jdks\jbr-17.0.14\bin\java.exe''
+Received JVM installation metadata from 'C:\Users\myles\.jdks\jbr-17.0.14': {JAVA_HOME=C:\Users\myles\.jdks\jbr-17.0.14, JAVA_VERSION=17.0.14, JAVA_VENDOR=JetBrains s.r.o., RUNTIME_NAME=OpenJDK Runtime Environment, RUNTIME_VERSION=17.0.14+1-b1367.22, VM_NAME=OpenJDK 64-Bit Server VM, VM_VERSION=17.0.14+1-b1367.22, VM_VENDOR=JetBrains s.r.o., OS_ARCH=amd64}
+file or directory 'C:\Users\myles\Downloads\Nirvana-26.2-fabric-port\Nirvana\fabric\src\generated\resources', not found
+Applying installer data from configuration 'mainCompileDependencyResolve'
+All projects evaluated.
+Task path ':common:compileJava' matched project ':common'
+Task name matched 'compileJava'
+Selected primary task 'compileJava' from project :common
+Tasks to be executed: [task ':common:createMinecraftArtifacts', task ':common:compileJava']
+Tasks that were excluded: []
+Resolve mutations for :common:createMinecraftArtifacts (Thread[#200,Execution worker Thread 5,5,main]) started.
+:common:createMinecraftArtifacts (Thread[#200,Execution worker Thread 5,5,main]) started.
+
+> Task :common:createMinecraftArtifacts UP-TO-DATE
+Caching disabled for task ':common:createMinecraftArtifacts' because:
+  Build cache is disabled
+  Implements its own caching
+Skipping task ':common:createMinecraftArtifacts' as it is up-to-date.
+Resolve mutations for :common:compileJava (Thread[#210,Execution worker Thread 15,5,main]) started.
+:common:compileJava (Thread[#200,Execution worker Thread 5,5,main]) started.
+
+> Task :common:compileJava FAILED
+Caching disabled for task ':common:compileJava' because:
+  Build cache is disabled
+Task ':common:compileJava' is not up-to-date because:
+  Task has failed previously.
+The input changes require a full rebuild for incremental task ':common:compileJava'.
+Compilation mode: in-process compilation
+Full recompilation is required because no incremental change information is available. This is usually caused by clean builds or changing compiler arguments.
+Compiling with toolchain 'C:\Program Files\Eclipse Adoptium\jdk-25.0.4.7-hotspot'.
+Compiling with JDK Java compiler API.
+
+[Incubating] Problems report is available at: file:///C:/Users/myles/Downloads/Nirvana-26.2-fabric-port/Nirvana/build/reports/problems/problems-report.html
+2 actionable tasks: 1 executed, 1 up-to-date
+Watched directory hierarchies: [C:\Users\myles\Downloads\Nirvana-26.2-fabric-port\Nirvana]
