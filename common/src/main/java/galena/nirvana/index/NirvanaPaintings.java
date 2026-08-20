@@ -3,7 +3,7 @@ package galena.nirvana.index;
 import com.tterrag.registrate.Registrate;
 import com.tterrag.registrate.util.entry.RegistryEntry;
 import galena.nirvana.platform.Services;
-import net.minecraft.world.entity.decoration.PaintingVariant;
+import net.minecraft.world.entity.decoration.painting.PaintingVariant;
 
 public class NirvanaPaintings {
 
