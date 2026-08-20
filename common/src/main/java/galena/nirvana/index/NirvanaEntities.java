@@ -6,9 +6,6 @@ import galena.nirvana.platform.Services;
 import galena.nirvana.world.entity.MinecartThc;
 import galena.nirvana.world.entity.PrimedThc;
 import galena.nirvana.world.entity.Reefer;
-import galena.nirvana.world.entity.renderer.CustomTntRenderer;
-import galena.nirvana.world.entity.renderer.ReeferRenderer;
-import net.minecraft.client.renderer.entity.TntMinecartRenderer;
 import net.minecraft.world.entity.Mob;
 import net.minecraft.world.entity.MobCategory;
 import net.minecraft.world.entity.item.PrimedTnt;
@@ -26,13 +23,11 @@ public class NirvanaEntities {
                     .clientTrackingRange(8)
             ))
             .loot(Services.DATAGEN::reefer)
-            .renderer(() -> ReeferRenderer::new)
             .register();
 
     public static final EntityEntry<? extends PrimedTnt> THC = REGISTRATE
             .<PrimedThc>entity("thc", PrimedThc::new, MobCategory.MISC)
             .lang("THC")
-            .renderer(() -> CustomTntRenderer.of(NirvanaBlocks.THC))
             .transform(Services.PLATFORM.entityProperties(builder -> builder
                     .fireImmune()
                     .sized(0.98F, 0.98F)
@@ -48,7 +43,6 @@ public class NirvanaEntities {
                     .sized(0.98F, 0.7F)
                     .clientTrackingRange(8)
             ))
-            .renderer(() -> TntMinecartRenderer::new)
             .register();
 
     public static void register() {

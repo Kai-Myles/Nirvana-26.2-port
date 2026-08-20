@@ -19,7 +19,6 @@ import java.util.Map;
 import java.util.function.Function;
 import java.util.stream.Collectors;
 import net.minecraft.client.renderer.rendertype.RenderType;
-import net.minecraft.client.renderer.blockentity.SkullBlockRenderer;
 import net.minecraft.data.recipes.RecipeCategory;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.world.item.CreativeModeTabs;
@@ -135,7 +134,6 @@ public class NirvanaBlocks {
 
     public static final BlockEntityEntry<SkullBlockEntity> MODDED_SKULL = REGISTRATE
         .<SkullBlockEntity>blockEntity("skull", ($, pos, state) -> new ModdedSkullBlockEntity(pos, state))
-        .renderer(() -> SkullBlockRenderer::new)
         .validBlocks(REEFER_HEAD, REEFER_WALL_HEAD)
         .register();
 

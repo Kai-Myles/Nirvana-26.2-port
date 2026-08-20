@@ -11,7 +11,7 @@ plugins {
 }
 
 include("common")
-loader("fabric")
+loader("fabric", "neoforge")
 
 fun loader(vararg names: String) =
     names.forEach {
