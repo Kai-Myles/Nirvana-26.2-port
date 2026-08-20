@@ -27,8 +27,6 @@ import net.minecraft.data.recipes.RecipeCategory;
 import net.minecraft.data.recipes.ShapelessRecipeBuilder;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.food.FoodProperties;
-import net.minecraft.world.item.ArmorItem;
-import net.minecraft.world.item.BannerPatternItem;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.BlockItem;
@@ -195,7 +193,6 @@ public class NirvanaItems {
 
     public static final ItemEntry<? extends Item> REEFER_SPAWN_EGG = REGISTRATE
         .item("reefer_spawn_egg", it -> Services.PLATFORM.createSpawnEggItem(NirvanaEntities.REEFER, 0x619932, 0x2f4f15, it))
-        //        .color(() -> () -> (stack, i) -> ((SpawnEggItem) stack.getItem()).getColor(i))
         .model((c, p) -> p.withExistingParent(c.getName(), "item/template_spawn_egg"))
         .tab(CreativeModeTabs.SPAWN_EGGS)
         .register();
@@ -210,7 +207,7 @@ public class NirvanaItems {
         .register();
 
     public static final ItemEntry<? extends Item> PEACE_BANNER_PATTERN = REGISTRATE
-        .item("peace_banner_pattern", it -> new BannerPatternItem(NirvanaTags.PEACE_BANNER_PATTERN, it))
+        .item("peace_banner_pattern", Item::new)
         .properties(it -> it.stacksTo(1))
         .properties(it -> it.rarity(Rarity.UNCOMMON))
         .setData(ProviderType.LANG, (context, provider) -> {
@@ -229,7 +226,7 @@ public class NirvanaItems {
 
     public static final ItemEntry<? extends Item> DEERSTALKER = REGISTRATE
         .item("deerstalker", Services.PLATFORM::createDeerstalkerItem)
-        .properties(it -> it.durability(ArmorItem.Type.HELMET.getDurability(5)))
+        .properties(it -> it.durability(65))
         .recipe(Services.DATAGEN::deerStalker)
         .model(Services.DATAGEN::flatItem)
         .tab(CreativeModeTabs.TOOLS_AND_UTILITIES)
